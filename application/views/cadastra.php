@@ -65,7 +65,10 @@
                         <div class="row">
                             <div class="form-group"> 
                                 <div class="col-sm-2 text-left">
+                                    
+                                    
                                     <button type="submit" class="btn btn-success" >Cadastrar</button>
+                                    
                                 </div>
                                 <div class=" col-sm-2 text-right">
                                     <button type="reset" class="btn btn-danger" onclick="location.href = 'index.php'">Voltar </button>
