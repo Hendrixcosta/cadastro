@@ -24,47 +24,45 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet" href="<?php echo base_url('assets/css/estilo.css'); ?>">
     </head>
     
-    <body>
-    <!-- div container onde vai toda a pagina -->
+    <body style="background: #ecf2f2">
     
+        
     
 
-    <!--primeira linha responsável só pelo cabeçalho-->
-        <header class="row cabecalho">
+    <!--cabeçalho-->
+    <header>
+         <div class="row cabecalho">
             
-            <div class="container col-sm-12 text-center">
-                <div class="col-sm-3" >
-                </div>
-
-                <div class="col-sm-4" >
-                   
-                </div>
-
-                <div class="col-sm-2">
-                   <a class="login-btn" onclick="login();">
-                       <!--  <a href=" <?php echo base_url('login')?>" >-->
-                    <img width="35px" style="margin-top:30px" src="<?php echo base_url('assets/imagens/login.png')?>"  alt="Imagem Não Encontrada" />
-                    </a>
-                    
-                    <a href="<?php echo base_url('carrinho')?>" >
-                     <img width="35px" style="margin-top:30px; margin-left:30px " src="<?php echo base_url('assets/imagens/carrinho.png')?>"  alt="Imagem Não Encontrada" /></a>
-                </div>
-                    
+            <div class="container col-sm-8 col-sm-offset-2" >
            
+                <div class="row">
+                    <div class="col-sm-4" >
+                        <img src="https://encontrebarato.com.br/lp/imagens/logo-encontre-barato.jpg" height="50px">
+                    </div>
 
+                    <div class="col-sm-4" >
 
-                
+                    </div>
+
+                    <div class="col-sm-4"  >
+
+                         <img src="https://encontrebarato.com.br/lp/imagens/black-friday-legal.jpg" height="50px">
+
+                    </div>
+                </div>
+
             </div>
-        </header>   
-    
-    
-    
-    
-    <!-- Vou utilliza só o centro da pagina ignorando a primeira e ultima colunas-->
-    <div class="container col-sm-10 col-sm-push-4">
+            
+        </div>
         
         
-        <!-- div row onde vai todo o conteúdo -->
-        <div class="row">
+        
+       
+    </header>   
+
+    
+    
+    
+   
             
             

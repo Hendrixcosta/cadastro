@@ -10,24 +10,20 @@
  *
  * @author Hendrix
  */
+
 ?>
 
-<div class="wrapper" role="main">
-    <div class="container">
+<div class="content col-sm-8 col-sm-offset-2" >
+    
+        <div class="row col-sm-10 col-sm-offset-1 promocao" >
+                    <?php echo "<h3>".$promocao."<h3>";?>
+        </div>
+    
         <div class="row">
-
-            
-            <div id="conteudo" class="col-md-9">
-                <div class="row" >
-                    
-                    <div id="titulo" class="col-sm-12">
-                        <h3>Por favor, entre com seus dados</h3>
-                    </div>
-                    
                     <form name="form" id="formulario" method="POST" action = "<?php echo base_url("Store") ?>" class="form-group col-sm-10 push-sm-2 formulario" onSubmit="return validacao()">
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label class="control-label col-sm-12 text-center" for="fname">Nome:</label>
+                                <label class="control-label col-sm-12 text-center">Nome:</label>
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="Nome">
                                 </div>
@@ -36,7 +32,7 @@
                         
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label class="control-label col-sm-12 text-center" for="email">Email:</label>
+                                <label class="control-label col-sm-12 text-center">Email:</label>
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" name="email" id="email" value="" placeholder="email@dominio.com">
                                 </div>
@@ -45,7 +41,7 @@
                         
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label class="control-label col-sm-12 text-center" for="street">Data de Nascimento:</label>
+                                <label class="control-label col-sm-12 text-center" >Data de Nascimento:</label>
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" name="nascimento" id="nascimento" value=""  placeholder="DD-MM-AAAA">
                                 </div>
@@ -54,7 +50,23 @@
                         
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label class="control-label col-sm-12 text-center" for="city">Gênero:</label>
+                                <label class="control-label col-sm-12 text-center" >Gênero:</label>
+                                <div class="col-sm-12">
+                                    <select class="form-control" id="sel1">
+                                        <option></option>
+                                        <option>M</option>
+                                        <option>F</option>
+                                      </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label class="control-label col-sm-12 text-center" >Gênero:</label>
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" name="genero" id="genero" value=""  placeholder="M ou F">
                                 </div>
@@ -77,11 +89,11 @@
                         </div>
                     </form>
                 
-                </div><!-- div row -->
+            </div><!-- div row -->
 
 
-            </div><!-- div conteudo -->
+           
 
-        </div><!-- div row container -->
-    </div><!-- div container -->
-</div><!-- div wrapper -->
+        
+    
+</div><!-- div content -->

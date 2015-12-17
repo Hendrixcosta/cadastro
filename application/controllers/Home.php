@@ -13,7 +13,8 @@ class Home extends CI_Controller  {
         $data['title'] = 'Cadastro';
         $this->load->view('header', $data);
         
-        $this->load->view('cadastra');
+        $data['promocao'] = "Tenha chances de ganhar um Iphone todo mês!!";
+        $this->load->view('cadastra', $data);
         
         $this->load->view('footer');
 
