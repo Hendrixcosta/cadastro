@@ -13,6 +13,7 @@ function validacao(){
         if (nome=="" ){
             alert ("Por favor preencher o campo nome.");
             document.form.nome.focus();
+            document.getElementById("nome-msg").innerHTML="*Obrigatório";
             return false;
         }else if (nome.length > TAM_MAX){
             alert ("Por favor preencha um nome com no máximo 255 letras.");

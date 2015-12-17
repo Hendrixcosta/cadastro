@@ -1,6 +1,4 @@
 
-
-
 .cabecalho {
     background-color: #0196D8;
     color: #ffffff;
@@ -17,3 +15,24 @@
     text-align: center;
 }
 
+.form-horizontal{
+    background: #0196D8;
+    color: #ffffff;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.titulo-form{
+    color: #ffffff;
+}
+
+.lojas{
+    padding-top: 800px
+}
+
+p.help-block{
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #ffff00;
+}
