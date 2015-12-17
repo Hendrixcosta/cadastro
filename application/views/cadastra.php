@@ -24,7 +24,7 @@
                         <h3>Por favor, entre com seus dados</h3>
                     </div>
                     
-                    <form id="formulario" method="POST" action = "<?php echo base_url("Store") ?>" class="form-group col-sm-10 push-sm-2 formulario" role="form">
+                    <form name="form" id="formulario" method="POST" action = "<?php echo base_url("Store") ?>" class="form-group col-sm-10 push-sm-2 formulario" onSubmit="return validacao()">
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <label class="control-label col-sm-12 text-center" for="fname">Nome:</label>
@@ -73,7 +73,8 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                
+                </div><!-- div row -->
 
 
             </div><!-- div conteudo -->
