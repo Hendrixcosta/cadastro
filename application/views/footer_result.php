@@ -3,6 +3,7 @@
     <footer>
         <div class="content col-sm-10 col-sm-offset-1 rodape"   >
            
+                  <a href="<?php echo base_url();?>"> 
                  <div class=row>
                     
                     <div class="col-sm-6" >

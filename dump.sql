@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Dez-2015 às 16:02
+-- Generation Time: 18-Dez-2015 às 17:52
 -- Versão do servidor: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -28,19 +28,20 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `users` (
   `nome` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL DEFAULT '',
   `nascimento` varchar(10) NOT NULL,
   `genero` varchar(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Extraindo dados da tabela `users`
+-- Indexes for dumped tables
 --
 
-INSERT INTO `users` (`nome`, `email`, `nascimento`, `genero`) VALUES
-('Hendrox', 'krypto@gmail.com', '1221', 'w'),
-('Hendrox', 'krypto@gmail.com', '1221', 'w'),
-('Hendrox', 'krypto@gmail.com', '1221', 'w');
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+ ADD PRIMARY KEY (`email`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

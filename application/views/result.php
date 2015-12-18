@@ -31,6 +31,7 @@
                     <strong> <?php echo "<h4>". $tipo ; ?>
                     </strong> 
                     <?php echo $mensagem;?>
+                    
             </div>
 
         </div> 
