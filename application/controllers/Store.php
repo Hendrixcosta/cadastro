@@ -32,7 +32,7 @@ class Store extends CI_Controller  {
                     $data['mensagem'] = "<br>O usuário ".$user->getNome()." foi cadastrado na promoção!";
                     $this->load->view('result', $data);
 
-                    $this->load->view('footer');
+                    $this->load->view('footer_result');
             }else {
                     $data['title'] = 'Cadastro';
                     $this->load->view('header', $data);
@@ -41,7 +41,7 @@ class Store extends CI_Controller  {
                     $data['mensagem'] = ": O email <b>".$user->getEmail()."</b> ja esta partipando da promoção. <br>Tente novamente com outro email.";
                     $this->load->view('result', $data);
 
-                    $this->load->view('footer');
+                    $this->load->view('footer_result');
             }    
         }
     }
