@@ -2,18 +2,22 @@ TAM_MAX = 255;
 
 first_test = false;
 
+//na primeira interaco do usuario, a funcao de validacao so e chamada pelo botao de cadastrar. 
+//Depoisde acionado o botao a cada alteracao de campo a funcao reavaliar eh ativada.
+
+//a funcao reavalir eh chamada a cada alteracao no formulario
 function reavaliar (){
-    
+    //só entra no loop depois que a funcao de validacao ja foi chamada pelo menos uma vez pelo botao de cadastrar
     if (first_test){
         validacao();
     }
 }
 
-
+//funcao que valida os campos do formulario
 function validacao(){
    
+   //variavel de controle. Se alguma validcao nao passa essa variavel se torna false
    valida=true;
-   
    
     // Validacao do campo nascimento--------------------------------------------
     var nascimento = document.form.nascimento.value;
@@ -79,7 +83,6 @@ function validacao(){
         }
       
     //--------------------------------------------------------------------------
-    
     
     first_test=true;
     return valida;
