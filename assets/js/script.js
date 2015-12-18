@@ -1,5 +1,14 @@
 TAM_MAX = 21;
 
+first_test = false;
+
+function reavaliar (){
+    
+    if (first_test){
+        validacao();
+    }
+}
+
 
 function validacao(){
    
@@ -74,9 +83,9 @@ function validacao(){
      
    
     
-  
     
-     return valida;
+    first_test=true;
+    return valida;
     
 }
 

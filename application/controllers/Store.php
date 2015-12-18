@@ -17,31 +17,33 @@ class Store extends CI_Controller  {
             
             //instancia uma nova model do user
             $user = new User();
-            //$user = $this->userfactory->getUserByEmail($_POST['email']);
             
-            if (true){
-            //if ($user == false){
+            $user->setNome($_POST['nome']);
+            $user->setEmail($_POST['email']);
+            $user->setNascimento($_POST['nascimento']);
+            $user->setGenero($_POST['genero']);
                 
-                $user->setNome($_POST['nome']);
-                $user->setEmail($_POST['email']);
-                $user->setNascimento($_POST['nascimento']);
-                $user->setGenero($_POST['genero']);
-                
-                if ($this->userfactory->commit($user)){
-                    echo "Usuario ". $user->getNome(). " cadastrado no banco com sucesso!";
-                }else {
-                    echo "Nao foi possivel efetuar cadastro!";
-                }
-                
-            }
-            
-            
-            
-        }else{
-            echo "NAO POstou!";
-        }
-        
+            if ($this->userfactory->commit($user)){
+                    
+                    $data['title'] = 'Cadastro';
+                    $this->load->view('header', $data);
 
+                    $data['tipo'] = "Sucesso!";
+                    $data['mensagem'] = "<br>O usuário ".$user->getNome()." foi cadastrado na promoção!";
+                    $this->load->view('result', $data);
+
+                    $this->load->view('footer');
+            }else {
+                    $data['title'] = 'Cadastro';
+                    $this->load->view('header', $data);
+
+                    $data['tipo'] = "Erro";
+                    $data['mensagem'] = ": O email <b>".$user->getEmail()."</b> ja esta partipando da promoção. <br>Tente novamente com outro email.";
+                    $this->load->view('result', $data);
+
+                    $this->load->view('footer');
+            }    
+        }
     }
     
     public function get($id=0){

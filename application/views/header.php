@@ -32,32 +32,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--cabeçalho-->
     <header>
          <div class="row cabecalho">
-            
             <div class="container col-sm-8 col-sm-offset-2" >
-           
                 <div class="row">
+                    
                     <div class="col-sm-4" >
+                        <a href="https://encontrebarato.com.br">
                         <img src="https://encontrebarato.com.br/lp/imagens/logo-encontre-barato.jpg" height="50px">
+                        </a>
                     </div>
 
-                    <div class="col-sm-4" >
-                        
+                    <div class="col-sm-4" >    
                     </div>
 
                     <div class="col-sm-4"  >
-
                          <img src="https://encontrebarato.com.br/lp/imagens/black-friday-legal.jpg" height="50px">
-
                     </div>
+  
                 </div>
-
             </div>
-            
         </div>
-        
-        
-        
-       
     </header>   
 
     

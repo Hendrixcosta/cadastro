@@ -42,7 +42,7 @@
                              <div class="form-group col-sm-12">
                                 <div class="col-sm-12">
                                                                   
-                                    <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="Insira seu nome" onChange="validacao()">
+                                    <input type="text" class="form-control" name="nome" id="nome" value="" placeholder="Insira seu nome" onChange="reavaliar()">
                                     <p id="nome-msg" class="help-block"></p>
                                 </div>    
                             </div>
@@ -54,7 +54,7 @@
                             <div class="form-group col-sm-12">
                                 <div class="col-sm-12">
                                     
-                                    <input type="text" class="form-control" name="email" id="email" value="" placeholder="Insira seu email (usuario@dominio.com)" onChange="validacao()">
+                                    <input type="text" class="form-control" name="email" id="email" value="" placeholder="Insira seu email (usuario@dominio.com)" onChange="reavaliar()">
                                     <p id="email-msg" class="help-block"></p>
                                 </div>
                             </div>                
@@ -64,7 +64,7 @@
                             <div class="form-group col-sm-12">
                                 <div class="col-sm-12">
                                     
-                                    <input type="text" class="form-control" name="nascimento" id="nascimento" value=""  placeholder="Data de Nascimento (DD-MM-AAAA)" onChange="validacao()">
+                                    <input type="text" class="form-control" name="nascimento" id="nascimento" value=""  placeholder="Data de Nascimento (DD-MM-AAAA)" onChange="reavaliar()">
                                     <p id="nascimento-msg" class="help-block"></p>
                                 </div>
                             </div>
