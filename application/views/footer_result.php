@@ -1,4 +1,6 @@
 
+<!-- Esse footer sera carregado logo depois de inserir o usuario no banco 
+exibindo um link  e uma  mensagem pra quem deseja se inscrever novamente-->
     
     <footer>
         <div class="content col-sm-10 col-sm-offset-1 rodape"   >

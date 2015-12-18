@@ -18,14 +18,15 @@
         <div class="row">
             <div class="col-sm-10 col-sm-offset-1 resultsdo" >
                  
-                 
+                <!-- Se inseriru com sucesso o PHP testa e exibe uma mensagem de sucesso
+                     se falhou na inserção a mensagem sera de warning-->
                 <?php 
                         if($tipo=="Sucesso"){
                             echo '<div class="alert alert-success">';
+                                                        
                         }else {
                             echo '<div class="alert alert-warning">';
                         }
-                 
                 ?>          
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <strong> <?php echo "<h4>". $tipo ; ?>
@@ -33,7 +34,7 @@
                     <?php echo $mensagem;?>
                     
             </div>
-
+            
         </div> 
 </div>
       

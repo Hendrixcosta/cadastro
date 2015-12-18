@@ -52,22 +52,4 @@ class User  extends CI_Model {
         $this->genero = $genero;
     }
 
-
-    public function commit (){
-        
-        $data = array(
-            'nome' => $this->nome,
-            'email' => $this->email,
-            'nascimento' => $this->nascimento,
-            'genero' => $this->genero
-        );
-        
-        //Inserir o objeto no banco
-        if ($this->db->insert("users", $data)) {
-            $this->_id = $this->db->insert_id();
-        }
-        
-    }
-    
-
 }

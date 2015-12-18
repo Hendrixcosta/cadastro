@@ -29,7 +29,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         
     
 
-    <!--cabeçalho-->
+    <!--cabeçalho do projeto que carrega duas imagens-->
     <header>
          <div class="row cabecalho">
             <div class="container col-sm-8 col-sm-offset-2" >

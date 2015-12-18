@@ -1,4 +1,4 @@
-TAM_MAX = 21;
+TAM_MAX = 255;
 
 first_test = false;
 
@@ -19,11 +19,13 @@ function validacao(){
     var nascimento = document.form.nascimento.value;
     var regexp = /[0-9]{2}-[0-9]{2}-[0-9]{4}/g;
     
-    if (nascimento.length != 10 || !regexp.test(nascimento)){
-        
-        document.form.nascimento.focus();
-        document.getElementById("nascimento-msg").innerHTML="Data inválida. <p>Tente novamente no Formato: (DD-MM-AAAA)";
-        valida = false;
+    //se nascimento for diferente de vazio valida o que esta escrito. e se for vazio deixa passar
+    if (nascimento != ""){
+        if (nascimento.length != 10 || !regexp.test(nascimento)){
+            document.form.nascimento.focus();
+            document.getElementById("nascimento-msg").innerHTML="Data inválida. <p>Tente novamente no Formato: (DD-MM-AAAA)";
+            valida = false;
+        }
     }else {
         document.getElementById("nascimento-msg").innerHTML="";
     }
@@ -77,11 +79,6 @@ function validacao(){
         }
       
     //--------------------------------------------------------------------------
-    
-    
-    
-     
-   
     
     
     first_test=true;
